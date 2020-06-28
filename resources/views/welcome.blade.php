@@ -6,28 +6,23 @@
 <body>
     <div class="container container-fluid full-height">
         <section class="content" id="app">
-            <br>
+          
             <div class="row">
                 <div class="col-12 text-center">
-                    <div class="row m-5">
-                        <div class="col-4 text-center ">
+                    <div class="row m-12">
+                        <div class="col-12 text-center ">
+                              <img src="{{asset('admin/dist/img/moh.png')}}" alt="User Image" width="200px" height="150px">
                             <h1> Sinaw Hospital </h1>
                             <h4>Investigation & follow-up team</h4>
-                            <h5>By : Nasser Al Rashdi</h5>
+                                                        <h4>Covid-19</h4>
+
                         </div>
-                        <div class="col-4 text-center">
-                            <img src="{{asset('admin/dist/img/moh.png')}}" alt="User Image" class="w-50 img-thumbnail">
-                            <h3>Covid-19</h3>
-                        </div>
-                        <div class="col-4 text-center">
-                            <h1>مستشفى سناو</h1>
-                            <h3>فريق التقصي والمتابعة</h3>
-                            <h5>فكرة : ناصر الراشدي</h5>
-                        </div>
+                        
+                     
 
                     </div>
                     <div class="row">
-                        <div class="col-lg-12 col-6">
+                        <div class="col-lg-12 col-12">
                             <div class="small-box bg-info">
                                 <div class="inner">
                                     <h3>{{\App\Patient::all()->count()}}</h3>
@@ -39,6 +34,8 @@
                                 <a href="#" class="small-box-footer">المجموع</a>
                             </div>
                         </div>
+                       </div>
+                    <div class="row">
                         <div class="col-lg-6 col-6">
                             <div class="small-box bg-gradient-purple">
                                 <div class="inner">
@@ -65,18 +62,7 @@
                                 <a href="#" class="small-box-footer">غير عماني</a>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-6">
-                            <div class="small-box bg-warning">
-                                <div class="inner">
-                                    <h3>{{\App\Patient::bands()->count()}}</h3>
-                                    <p>BAND</p>
-                                </div>
-                                <div class="icon">
-                                    <i class="ion ion-android-warning"></i>
-                                </div>
-                                <a href="#" class="small-box-footer">إسوارة</a>
-                            </div>
-                        </div>
+
 
                         <div class="col-lg-6 col-6">
                             <div class="small-box bg-danger">
@@ -119,7 +105,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-12 col-6">
+                        <div class="col-lg-6 col-6">
                             <!-- small box -->
                             <div class="small-box bg-gradient-dark">
                                 <div class="inner">
@@ -175,11 +161,17 @@
         @include('admin.layout.footer')
         <x-datatable id="omani"></x-datatable>
     </div>
-
-    <footer class="main-footer no-print">
-        <strong>Copyright &copy; 2020 <a href="http://defaultpath.com/">DefaultPath</a>.</strong>
-        All rights reserved. By : Nasser Al Rashdi
+<center>
+    <footer class="footer">
+        فكرة وإخراج :
+        <strong>  ناصر بن سيف الراشدي 
+    </strong>
+       فريق التقصي والمتابعة
     </footer>
+    </center>
+    <br>    <br>
+    <br>
+
 </body>
 
 </html>
